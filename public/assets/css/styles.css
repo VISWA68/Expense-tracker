@@ -1,0 +1,178 @@
+.bg {
+    background-image: linear-gradient(to right, #9da1d5, #bc9bf0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: auto;
+    max-height: auto;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: black solid 1px;
+    box-shadow: 5px 5px 15px rgb(70, 57, 74);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #514c6c;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+input, select, button {
+    margin-top: 0.9rem;
+    padding: 13px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(205, 210, 223);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+button {
+    background-color: #9887c3;
+    border: none;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 1px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #b3a5d7;
+}
+
+
+#expensesList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#expensesList li {
+    margin-bottom: 0.5rem;
+}
+
+#chart {
+    max-width: 400px;
+    margin: auto;
+}
+
+.wrap {
+    background-color: #514c6c;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-right: 120px;
+    position: relative;
+    top: 59px;
+    height: 365px;
+    width: 235px;
+    box-shadow: 5px 5px 15px 5px rgb(70, 57, 74);
+    
+}
+
+.piewrap {
+    background-color: #514c6c;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+    border-radius: 1rem;
+    display: inline-block;
+    position: relative;
+    bottom: 0px;
+    box-shadow: 5px 5px 15px 5px rgb(70, 57, 74);
+}
+
+.explisth2 {
+    text-align: left;
+    margin: 20px 0px 35px 0px;
+}
+
+th {
+    background-color: #e0dce4;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f4fc;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.bgtable {
+    margin: 50px 200px;
+    border: black solid 1px;
+    box-shadow: 5px 5px 15px 5px rgb(70, 57, 74);
+    border-radius: 10px;
+    border: 1px;
+    padding: 50px;
+    background-color: #514c6c;
+}
+
+th {
+    border: 0px;
+}
+
+.a {
+    
+    border-top-left-radius: 10px;
+}
+
+.b {
+    
+    border-top-right-radius: 10px;
+}
+
+#logoutBtn {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+

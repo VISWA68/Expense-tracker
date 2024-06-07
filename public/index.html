@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="bg">
+        <header>
+            <h1 style="display: inline-block;">Hello, <span id="username">User</span>!</h1>
+            <button id="logoutBtn">Logout</button>
+        </header>
+        <center>
+            <div class="wrap">
+                <section id="addExpense">
+                    <h2>Add Expense</h2>
+                    <form id="addExpenseForm">
+                        <input type="text" id="expenseTitle" placeholder="Title" required>
+                        <input type="date" id="expenseDate" required>
+                        <input type="number" id="expenseAmount" placeholder="Amount" required>
+                        <select id="expenseCategory" required>
+                            <option value="" disabled selected>Select Category</option>
+                            <option value="Food">Food</option>
+                            <option value="Movie">Movie</option>
+                            <option value="Leisure">Leisure</option>
+                            <option value="Work">Work</option>
+                        </select>
+                        <button type="submit">Add Expense</button>
+                    </form>
+                </section>
+            </div>
+            <div class="piewrap">
+                <section id="expensesChart">
+                    <h2>Expenses Chart</h2>
+                    <canvas id="chart"></canvas>
+                </section>
+            </div>
+            <section id="expensesList">
+                <div class="bgtable">
+                    <h2 class="explisth2">Expenses List</h2>
+                    <table id="expensesTable">
+                        <thead>
+                            <tr>
+                                <th class="a">Title</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Category</th>
+                                <th class="b">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="expenses"></tbody>
+                    </table>
+                </div>
+            </section>
+        </center>
+    </div>
+    <!-- Include local Chart.js before your custom script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
